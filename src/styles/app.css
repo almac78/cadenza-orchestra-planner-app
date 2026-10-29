@@ -1,0 +1,13 @@
+/*Custom styles for Cadenza Orchestra Planner
+Loaded after Bootstrap, so that these rules refine the defaults.
+(Full theme to be added in later step.) */
+
+:root {
+  --cz-parchment: #f4f1ea;
+  --cz-ink: #0b1220;
+  --cz-gold: #c8a34a;
+}
+body {
+  background-color: var(--cz-parchment);
+  color: var(--cz-ink);
+}

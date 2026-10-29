@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="220" viewBox="0 0 820 220" role="img" aria-label="Cadenza Orchestra Planner lockup">
+  <defs>
+    <style>
+      :root { --ink:#0b1220; --gold:#c8a34a; --muted:#6b7280; }
+    </style>
+  </defs>
+
+  <!-- Mark -->
+  <g transform="translate(28,18)">
+    <circle cx="92" cy="92" r="76" fill="none" stroke="var(--ink)" stroke-width="8"/>
+    <g stroke="var(--ink)" stroke-width="5" stroke-linecap="round" opacity="0.92">
+      <line x1="40" y1="70" x2="144" y2="70"/>
+      <line x1="40" y1="82" x2="144" y2="82"/>
+      <line x1="40" y1="94" x2="144" y2="94"/>
+      <line x1="40" y1="106" x2="144" y2="106"/>
+      <line x1="40" y1="118" x2="144" y2="118"/>
+    </g>
+
+    <!-- Serif C monogram -->
+    <text x="92" y="116"
+          text-anchor="middle"
+          font-family="Georgia, 'Times New Roman', serif"
+          font-size="56"
+          fill="var(--ink)"
+          opacity="0.40"
+          letter-spacing="1">C</text>
+
+    <!-- Baton -->
+    <line x1="62" y1="128" x2="132" y2="52"
+          stroke="var(--gold)" stroke-width="9" stroke-linecap="round"/>
+    <circle cx="58" cy="132" r="8" fill="var(--gold)"/>
+
+    <!-- Event dot -->
+    <circle cx="128" cy="106" r="6" fill="var(--ink)"/>
+  </g>
+
+  <!-- Wordmark -->
+  <text x="230" y="110"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="58"
+        fill="var(--ink)"
+        letter-spacing="1.2">Cadenza</text>
+
+  <text x="232" y="154"
+        font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif"
+        font-size="22"
+        fill="var(--muted)"
+        letter-spacing="2">ORCHESTRA PLANNER</text>
+
+  <!-- Gold underline accent -->
+  <rect x="232" y="170" width="320" height="4" rx="2" fill="var(--gold)"/>
+</svg>
