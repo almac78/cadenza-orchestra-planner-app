@@ -6,14 +6,16 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/app.css";
 
 import App from "./App";
-// Context provider: makes login state available to every component inside it.
-import {AuthProvider} from "./contexts/AuthProvider.jsx";
+// Context providers: authentication must wrap events, because events belong to the logged-in user.
+import { AuthProvider } from "./contexts/AuthProvider";
+import { EventsProvider } from "./contexts/EventsProvider";
 
-// Render the app inside the AuthProvider so that login state is available to all components.
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <AuthProvider>
-      <App />
+      <EventsProvider>
+        <App />
+      </EventsProvider>
     </AuthProvider>
   </StrictMode>,
 );
