@@ -9,13 +9,16 @@ import App from "./App";
 // Context providers: authentication must wrap events, because events belong to the logged-in user.
 import { AuthProvider } from "./contexts/AuthProvider";
 import { EventsProvider } from "./contexts/EventsProvider";
+import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <AuthProvider>
-      <EventsProvider>
+    <BrowserRouter>
+      <AuthProvider>
+        <EventsProvider>
         <App />
       </EventsProvider>
     </AuthProvider>
+    </BrowserRouter>
   </StrictMode>,
 );
