@@ -284,6 +284,16 @@ h2::after {
   margin-bottom: 0.9rem;
 }
 
+/* "Show notes" button on phones */
+.cz-notes-toggle,
+.cz-notes-toggle:hover,
+.cz-notes-toggle:focus,
+.cz-notes-toggle:active {
+  color: var(--cz-gold-dark) !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+
 .cz-badge-relative {
   background: var(--cz-gold-tint);
   color: var(--cz-gold-dark);
